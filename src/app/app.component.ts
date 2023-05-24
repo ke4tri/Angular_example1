@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+
+import { Component,ViewEncapsulation  } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class AppComponent {
-  serverElements = [{type: 'server',name: 'Testserver', content: 'Just a test!'}];
-  // newServerName = '';
-  // newServerContent = '';
+  serverElements = [{type: 'server',name: 'Testserver', content: 'Just a test!'},{type: 'server',name: 'sex',content: 'more of it'}];
 
     onServerAdded(serverData: {serverName: string, serverContent:string}) {
         this.serverElements.push({
@@ -26,4 +26,5 @@ export class AppComponent {
           content: blueprintData.serverContent
         });
       }
+
 }
