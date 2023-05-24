@@ -6,14 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server.element.component';
-import { TestComponentComponent } from './test-component/test-component.component';
+
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     CockpitComponent,
-    ServerElementComponent,
-      TestComponentComponent
+    ServerElementComponent
    ],
   imports: [
     BrowserModule,
